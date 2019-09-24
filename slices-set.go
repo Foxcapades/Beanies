@@ -1,5 +1,10 @@
 package bean
 
+type BoolSliceSetter struct {
+	Calls uint
+	Input [][]bool
+}
+
 type ByteSliceSetter struct {
 	Calls uint
 	Input [][]byte

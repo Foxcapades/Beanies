@@ -1,5 +1,10 @@
 package bean
 
+type BoolSetter struct {
+	Calls uint
+	Input []bool
+}
+
 type ByteSetter struct {
 	Calls uint
 	Input []byte

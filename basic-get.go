@@ -1,5 +1,10 @@
 package bean
 
+type BoolGetter struct {
+	Calls   uint
+	Returns bool
+}
+
 type ByteGetter struct {
 	Calls   uint
 	Returns byte

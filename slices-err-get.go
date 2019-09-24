@@ -1,5 +1,11 @@
 package bean
 
+type BoolSliceErrGetter struct {
+	Calls   uint
+	Returns []bool
+	Error   error
+}
+
 type ByteSliceErrGetter struct {
 	Calls   uint
 	Returns []byte

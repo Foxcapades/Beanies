@@ -1,5 +1,11 @@
 package bean
 
+type BoolErrGetter struct {
+	Calls   uint
+	Returns bool
+	Error   error
+}
+
 type ByteErrGetter struct {
 	Calls   uint
 	Returns byte
