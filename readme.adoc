@@ -1,0 +1,4 @@
+= Tiny Mocking Helpers
+
+A series of small structs that can be strung together to
+more easily create mock types for testing.
