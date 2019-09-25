@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	Execute(ParseInput(sliceErrGetMap), Must(New("getter").Parse(Getter)))
+	Execute(ParseInput(sliceErrGetMap), Must(New("getter").Parse(ErrGetter)))
 }
 
 func sliceErrGetMap(def TypeDef) TypeDef {

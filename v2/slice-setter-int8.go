@@ -1,4 +1,4 @@
-// Generated at 2019-09-24T21:49:03-04:00
+// Generated at 2019-09-24T21:57:46-04:00
 package bean
 
 type Int8SliceSetter struct {

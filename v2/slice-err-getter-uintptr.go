@@ -1,14 +1,15 @@
-// Generated at 2019-09-24T21:49:21-04:00
+// Generated at 2019-09-24T21:58:04-04:00
 package bean
 
 type UintptrSliceErrGetter struct {
 	Calls   uint
 	Returns []uintptr
+	Error		error
 }
 
-func (g *UintptrSliceErrGetter) Get() []uintptr {
+func (g *UintptrSliceErrGetter) Get() ([]uintptr, error) {
 	g.Calls++
-	return g.Returns
+	return g.Returns, g.Error
 }
 
 func (g UintptrSliceErrGetter) CallCount() uint {
@@ -17,4 +18,8 @@ func (g UintptrSliceErrGetter) CallCount() uint {
 
 func (g *UintptrSliceErrGetter) SetReturnValue(val []uintptr) {
 	g.Returns = val
+}
+
+func (g *UintptrSliceErrGetter) SetError(err error) {
+	g.Error = err
 }

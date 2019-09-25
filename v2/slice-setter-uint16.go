@@ -1,4 +1,4 @@
-// Generated at 2019-09-24T21:49:16-04:00
+// Generated at 2019-09-24T21:57:58-04:00
 package bean
 
 type Uint16SliceSetter struct {

@@ -1,14 +1,15 @@
-// Generated at 2019-09-24T21:49:11-04:00
+// Generated at 2019-09-24T21:57:54-04:00
 package bean
 
 type StringSliceErrGetter struct {
 	Calls   uint
 	Returns []string
+	Error		error
 }
 
-func (g *StringSliceErrGetter) Get() []string {
+func (g *StringSliceErrGetter) Get() ([]string, error) {
 	g.Calls++
-	return g.Returns
+	return g.Returns, g.Error
 }
 
 func (g StringSliceErrGetter) CallCount() uint {
@@ -17,4 +18,8 @@ func (g StringSliceErrGetter) CallCount() uint {
 
 func (g *StringSliceErrGetter) SetReturnValue(val []string) {
 	g.Returns = val
+}
+
+func (g *StringSliceErrGetter) SetError(err error) {
+	g.Error = err
 }

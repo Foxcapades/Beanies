@@ -1,4 +1,4 @@
-// Generated at 2019-09-24T21:49:20-04:00
+// Generated at 2019-09-24T21:58:02-04:00
 package bean
 
 type UintptrSetter struct {

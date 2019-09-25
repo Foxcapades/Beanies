@@ -1,14 +1,16 @@
-// Generated at 2019-09-24T21:49:21-04:00
+// Generated at 2019-09-24T21:58:04-04:00
 package bean
 
 type UintptrSliceErrSetter struct {
 	Calls   uint
 	Inputs  [][]uintptr
+	Error   error
 }
 
-func (g *UintptrSliceErrSetter) Set(v []uintptr) {
+func (g *UintptrSliceErrSetter) Set(v []uintptr) error {
 	g.Calls++
 	g.Inputs = append(g.Inputs, v)
+	return g.Error
 }
 
 func (g UintptrSliceErrSetter) CallCount() uint {
@@ -17,4 +19,8 @@ func (g UintptrSliceErrSetter) CallCount() uint {
 
 func (g *UintptrSliceErrSetter) InputValues() [][]uintptr {
 	return g.Inputs
+}
+
+func (g *UintptrSliceErrSetter) SetError(err error) {
+	g.Error = err
 }

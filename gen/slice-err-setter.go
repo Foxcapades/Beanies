@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	Execute(ParseInput(sliceErrSetMap), Must(New("setter").Parse(Setter)))
+	Execute(ParseInput(sliceErrSetMap), Must(New("setter").Parse(ErrSetter)))
 }
 
 func sliceErrSetMap(def TypeDef) TypeDef {

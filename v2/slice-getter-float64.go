@@ -1,4 +1,4 @@
-// Generated at 2019-09-24T21:49:00-04:00
+// Generated at 2019-09-24T21:57:42-04:00
 package bean
 
 type Float64SliceGetter struct {

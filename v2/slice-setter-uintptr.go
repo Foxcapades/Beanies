@@ -1,4 +1,4 @@
-// Generated at 2019-09-24T21:49:21-04:00
+// Generated at 2019-09-24T21:58:03-04:00
 package bean
 
 type UintptrSliceSetter struct {

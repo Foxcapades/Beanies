@@ -1,4 +1,4 @@
-// Generated at 2019-09-24T21:49:13-04:00
+// Generated at 2019-09-24T21:57:56-04:00
 package bean
 
 type Uint8Setter struct {

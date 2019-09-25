@@ -1,4 +1,4 @@
-// Generated at 2019-09-24T21:48:59-04:00
+// Generated at 2019-09-24T21:57:41-04:00
 package bean
 
 type Float64Setter struct {

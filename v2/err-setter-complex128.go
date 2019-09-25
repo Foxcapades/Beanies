@@ -1,4 +1,4 @@
-// Generated at 2019-09-24T21:48:56-04:00
+// Generated at 2019-09-24T21:57:39-04:00
 package bean
 
 type Complex128ErrSetter struct {
